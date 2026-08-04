@@ -13,7 +13,7 @@ python3 -m http.server 8080
 
 ## 上线前必改
 
-1. 把所有 `YOUR_EMAIL@example.com` 换成真实邮箱（`contact.html` / `about.html` / `privacy.html`）
+1. Contact/About/Privacy 邮箱已设为 bordenxin@gmail.com
 2. 购买域名，把 `robots.txt` 与生成 sitemap 时的 `--base-url` 换成你的域名
 3. About 页按需补上真实署名
 
