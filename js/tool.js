@@ -6,7 +6,7 @@ const CATALOG = [
     budgets: ["free", "low", "mid"],
     privacy: ["cloud"],
     summary: "Draft blogs, emails, and campaigns faster with guided prompts and editing workflows.",
-    href: "/articles/best-ai-writing-tools.html",
+    href: "articles/best-ai-writing-tools.html",
     linkLabel: "Best AI writing tools guide"
   },
   {
@@ -16,7 +16,7 @@ const CATALOG = [
     budgets: ["free", "low", "mid", "high"],
     privacy: ["cloud"],
     summary: "Flexible assistants for brainstorming, analysis, and everyday knowledge work.",
-    href: "/articles/chatgpt-vs-claude.html",
+    href: "articles/chatgpt-vs-claude.html",
     linkLabel: "ChatGPT vs Claude comparison"
   },
   {
@@ -26,7 +26,7 @@ const CATALOG = [
     budgets: ["low", "mid", "high"],
     privacy: ["cloud", "local"],
     summary: "Create concept art, social creatives, and product visuals from text prompts.",
-    href: "/articles/best-ai-image-generators.html",
+    href: "articles/best-ai-image-generators.html",
     linkLabel: "Best AI image generators"
   },
   {
@@ -36,7 +36,7 @@ const CATALOG = [
     budgets: ["free", "mid", "high"],
     privacy: ["cloud", "local"],
     summary: "Autocomplete, refactors, and repo-aware help inside your editor.",
-    href: "/articles/ai-coding-assistants-compared.html",
+    href: "articles/ai-coding-assistants-compared.html",
     linkLabel: "AI coding assistants compared"
   },
   {
@@ -46,7 +46,7 @@ const CATALOG = [
     budgets: ["free"],
     privacy: ["cloud"],
     summary: "Useful starting points when you need capability before a paid plan.",
-    href: "/articles/best-free-ai-tools.html",
+    href: "articles/best-free-ai-tools.html",
     linkLabel: "Best free AI tools"
   },
   {
@@ -56,7 +56,7 @@ const CATALOG = [
     budgets: ["low", "mid"],
     privacy: ["cloud"],
     summary: "Lightweight stacks for support drafts, content, and meeting follow-ups.",
-    href: "/articles/ai-tools-for-small-business.html",
+    href: "articles/ai-tools-for-small-business.html",
     linkLabel: "AI tools for small business"
   },
   {
@@ -66,7 +66,7 @@ const CATALOG = [
     budgets: ["low", "mid"],
     privacy: ["cloud", "local"],
     summary: "Web UIs and alternatives if Discord-based workflows are a blocker.",
-    href: "/articles/midjourney-alternatives.html",
+    href: "articles/midjourney-alternatives.html",
     linkLabel: "Midjourney alternatives"
   },
   {
@@ -76,7 +76,7 @@ const CATALOG = [
     budgets: ["free", "low", "mid", "high"],
     privacy: ["cloud"],
     summary: "Match Free / Plus / Team-style tiers to how often your team actually prompts.",
-    href: "/articles/chatgpt-pricing-explained.html",
+    href: "articles/chatgpt-pricing-explained.html",
     linkLabel: "ChatGPT pricing explained"
   },
   {
@@ -86,7 +86,7 @@ const CATALOG = [
     budgets: ["free", "low"],
     privacy: ["cloud"],
     summary: "Explainers and outline help—with clear academic integrity boundaries.",
-    href: "/articles/best-ai-tools-for-students.html",
+    href: "articles/best-ai-tools-for-students.html",
     linkLabel: "Best AI tools for students"
   },
   {
@@ -96,7 +96,7 @@ const CATALOG = [
     budgets: ["free", "low", "mid"],
     privacy: ["cloud"],
     summary: "Notes, meeting summaries, and task drafting that cut admin time.",
-    href: "/articles/ai-productivity-tools.html",
+    href: "articles/ai-productivity-tools.html",
     linkLabel: "AI productivity tools"
   },
   {
@@ -106,7 +106,7 @@ const CATALOG = [
     budgets: ["free", "low", "mid", "high"],
     privacy: ["cloud", "local", "either"],
     summary: "If you are early, start with criteria—not another random free trial.",
-    href: "/articles/how-to-choose-an-ai-tool.html",
+    href: "articles/how-to-choose-an-ai-tool.html",
     linkLabel: "How to choose an AI tool"
   },
   {
@@ -116,7 +116,7 @@ const CATALOG = [
     budgets: ["free", "low", "mid"],
     privacy: ["cloud"],
     summary: "Use detectors as signals, not verdicts—especially for education and publishing.",
-    href: "/articles/ai-content-detection-tools.html",
+    href: "articles/ai-content-detection-tools.html",
     linkLabel: "AI content detection tools"
   }
 ];
