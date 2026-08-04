@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://hexin1136.github.io/toolpick-ai/sitemap.xml
+Sitemap: https://hexin1136.github.io/sitemap.xml

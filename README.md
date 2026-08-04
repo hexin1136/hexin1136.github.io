@@ -1,5 +1,7 @@
 # ToolPick AI（正式站）
 
+线上地址：https://hexin1136.github.io/
+
 英文 AI 工具站：首页交互式 **AI tool picker** + Phase-1 **12 篇** SEO 长文 + 信任页 + AdSense 占位。可推送到 GitHub，再用 Cloudflare Pages / GitHub Pages 部署。
 
 ## 本地预览
