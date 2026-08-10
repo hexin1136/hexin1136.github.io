@@ -85,6 +85,15 @@ a:hover { color: var(--brand); }
   display: grid;
   place-items: center;
 }
+.ad-slot[hidden] {
+  display: none;
+}
+.ad-slot--live {
+  border: 0;
+  background: transparent;
+  min-height: 0;
+  display: block;
+}
 .ad-placeholder {
   color: var(--muted);
   font-size: 0.85rem;
