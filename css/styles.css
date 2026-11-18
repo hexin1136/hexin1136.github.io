@@ -41,6 +41,15 @@ a:hover { color: var(--brand); }
   padding: 1.25rem 0;
 }
 
+/* 改动原因：窄屏上站名和五个导航挤在一行时，站名会被拆成两行。 */
+@media (max-width: 720px) {
+  .site-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.65rem;
+  }
+}
+
 .brand {
   font-family: var(--font-display);
   font-size: 1.45rem;
@@ -48,6 +57,7 @@ a:hover { color: var(--brand); }
   text-decoration: none;
   color: var(--ink);
   letter-spacing: -0.02em;
+  white-space: nowrap;
 }
 
 .nav {
@@ -75,21 +85,6 @@ a:hover { color: var(--brand); }
   color: var(--muted);
   font-size: 1.1rem;
   margin: 0 0 1.5rem;
-}
-
-.ad-slot {
-  margin: 1.25rem 0;
-  border: 1px dashed var(--line);
-  background: rgba(255,255,255,0.45);
-  min-height: 90px;
-  display: grid;
-  place-items: center;
-}
-.ad-placeholder {
-  color: var(--muted);
-  font-size: 0.85rem;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
 }
 
 .tool-panel {
@@ -166,16 +161,10 @@ a:hover { color: var(--brand); }
   color: var(--warn);
 }
 
+/* 改动原因：去掉未展示的广告侧栏后，文章改为单栏，避免右侧留下空白列。 */
 .layout-article {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr);
-  gap: 1.5rem;
+  display: block;
   padding-bottom: 3rem;
-}
-@media (min-width: 900px) {
-  .layout-article {
-    grid-template-columns: minmax(0, 1fr) 220px;
-  }
 }
 
 article h1 {
@@ -203,8 +192,6 @@ article th, article td {
   vertical-align: top;
 }
 article th { background: var(--bg-accent); }
-
-.sidebar .ad-slot { position: sticky; top: 1rem; min-height: 250px; }
 
 .page {
   background: var(--surface);

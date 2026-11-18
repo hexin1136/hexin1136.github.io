@@ -36,8 +36,9 @@ def main() -> int:
     parser.add_argument("site_root", type=Path)
     parser.add_argument(
         "--base-url",
-        default="https://example.com",
-        help="Canonical site origin (no trailing slash)",
+        # 改动原因：正式站固定为 GitHub Pages 根域名，避免漏传参数时写成 example.com。
+        default="https://hexin1136.github.io",
+        help="Canonical site origin, no trailing slash",
     )
     parser.add_argument(
         "-o",
