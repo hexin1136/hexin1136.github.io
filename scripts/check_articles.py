@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Check Phase-1 AI-tools articles for SEO basics."""
+"""Check ToolPick AI articles for SEO basics."""
 
 from __future__ import annotations
 
@@ -17,6 +17,12 @@ META_DESC_RE = re.compile(
     re.I | re.S,
 )
 ARTICLE_RE = re.compile(r"<article\b[^>]*>(.*?)</article>", re.I | re.S)
+# 同时接受 rel 在 href 前后的两种写法。
+CANONICAL_RE = re.compile(
+    r'<link[^>]+rel=["\']canonical["\'][^>]+href=["\']([^"\']+)["\']'
+    r'|<link[^>]+href=["\']([^"\']+)["\'][^>]+rel=["\']canonical["\']',
+    re.I,
+)
 
 
 def strip_html(html: str) -> str:
@@ -57,8 +63,16 @@ def check_file(path: Path, keyword: str | None, min_words: int) -> list[str]:
         if kw not in h1.lower() and kw not in body[:500].lower():
             errors.append(f"keyword '{keyword}' not in H1 or early body")
 
-    if 'data-ad-slot="in-content"' not in html and "ad-slot" not in html:
-        errors.append("no ad slot placeholder found")
+    # 改动原因：页面不再保留可见广告占位；改为要求指向正式站的绝对 canonical。
+    if "ad-placeholder" in html or "Ad slot:" in html:
+        errors.append("visible ad placeholder still present")
+    canonical = ""
+    canonical_m = CANONICAL_RE.search(html)
+    if canonical_m:
+        canonical = canonical_m.group(1) or canonical_m.group(2) or ""
+    expected = f"https://hexin1136.github.io/articles/{path.name}"
+    if canonical != expected:
+        errors.append(f"canonical {canonical or '(missing)'} != {expected}")
 
     return errors
 

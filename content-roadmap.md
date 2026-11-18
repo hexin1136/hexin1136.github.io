@@ -2,7 +2,7 @@
 
 Brand: ToolPick AI  
 Language: English  
-Strategy: homepage AI tool picker + SEO articles → Google AdSense
+Strategy: homepage AI tool picker plus original English guides at https://hexin1136.github.io/
 
 ## Phase 1 — Launch (12) ✅ in progress / ship together
 
@@ -21,7 +21,7 @@ Strategy: homepage AI tool picker + SEO articles → Google AdSense
 | 11 | how to choose an AI tool | how-to-choose-an-ai-tool.html | Phase 1 |
 | 12 | AI content detection tools | ai-content-detection-tools.html | Phase 1 |
 
-Ship Phase 1 before applying to AdSense.
+Phase 1 is the live guide set. Add later phases only as full original articles.
 
 ## Phase 2 — Grow (+12)
 
@@ -62,7 +62,7 @@ Continue from the skill backlog clusters (writing, image/video/audio, coding, bu
 1. Pick unused primary keywords (3–6 word phrases)  
 2. Write full ≥800-word originals  
 3. Add 1–2 internal links from older posts  
-4. Regenerate `sitemap.xml` with `python scripts/build_sitemap.py . --base-url https://YOUR_DOMAIN`  
+4. Regenerate `sitemap.xml` with `python scripts/build_sitemap.py . --base-url https://hexin1136.github.io`  
 5. Re-run `python scripts/check_articles.py articles --min-words 800`
 
-Stop expanding if quality drops; depth beats thin volume for AdSense and SEO.
+Stop expanding if quality drops; depth beats thin volume.
