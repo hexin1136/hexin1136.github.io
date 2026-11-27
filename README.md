@@ -2,7 +2,7 @@
 
 线上地址：https://hexin1136.github.io/
 
-英文 AI 工具站：首页交互式 **AI tool picker**，12 篇原创英文指南，以及 About、Contact、Privacy、Disclaimer。正式地址就是这个 GitHub Pages 根站点，当前不使用自定义域名。
+英文 AI 工具站：首页交互式 **AI tool picker**，12 篇原创英文指南，以及 About、Contact、Privacy、Disclaimer、Disclosure。正式地址就是这个 GitHub Pages 根站点，当前不使用自定义域名。
 
 ## 本地预览
 
