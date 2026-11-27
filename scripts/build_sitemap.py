@@ -15,6 +15,7 @@ CORE = [
     ("contact.html", "0.5", "monthly"),
     ("privacy.html", "0.3", "yearly"),
     ("disclaimer.html", "0.3", "yearly"),
+    ("disclosure.html", "0.3", "yearly"),
     ("articles/index.html", "0.8", "weekly"),
 ]
 
